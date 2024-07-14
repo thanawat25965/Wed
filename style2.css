@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Tungsten-Bold, sans-serif;
+}
+
+body {
+    background-image: url('https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/122e6caea8b2a2dbb6d6e71eea4e24effab342da-5120x574.png?auto=format&fit=fill&q=80&w=1470');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Tungsten-Bold', sans-serif;
+}
+
+header {
+    background-image: url('https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/122e6caea8b2a2dbb6d6e71eea4e24effab342da-5120x574.png?auto=format&fit=fill&q=80&w=1470');
+    animation: gradientAnimation 15s ease infinite;
+}
+
+nav {
+    display: flex;
+    padding: 20px 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 36px; /* Adjusted font size for smaller screens */
+    font-weight: 600;
+    font-family: 'Tungsten-Bold', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.logo span {
+    color: #fa0303;
+}
+
+.navbar ul {
+    flex: 1;
+    text-align: right;
+}
+
+.navbar ul li {
+    display: inline-block; 
+    padding: 8px 15px; 
+    list-style: none;
+}
+
+.navbar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px; /* Adjusted font size for smaller screens */
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #fcfcfc;
+}
+
+/* Text Section */
+.text {
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+    height: auto; /* Adjusted to auto for flexible height */
+    color: #fff;
+    padding: 50px 0; /* Added padding for spacing */
+    text-align: center; /* Center text */
+}
+
+.text h1 {
+    font-size: 48px; /* Adjusted font size for smaller screens */
+    margin-bottom: 20px; /* Added margin bottom for spacing */
+}
+
+.text p {
+    font-size: 18px; /* Adjusted font size for smaller screens */
+    margin: 0 auto; /* Center align text */
+    max-width: 80%; /* Added max-width for better readability */
+    padding: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.7); /* Border color */
+    border-radius: 15px; /* Rounded corners */
+    background: rgba(255, 255, 255, 0.2); /* Transparent background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow */
+    backdrop-filter: blur(5px); /* Blur effect */
+}
+
+.btn2 {
+    display: inline-block;
+    padding: 12px 24px; /* Adjusted padding for smaller screens */
+    border-radius: 20px;
+    background: linear-gradient(135deg, #333333, #555555); /* Dark gray gradient */
+    color: #fff;
+    border: 2px solid #e60b0b; /* Dark red border */
+    font-weight: bold;
+    font-size: 16px; /* Adjusted font size for smaller screens */
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow */
+}
+
+.btn2:hover {
+    background: linear-gradient(135deg, #555555, #333333); /* Dark gray gradient on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+    transform: scale(1.05); /* Scale on hover */
+}
+
+.video-wrapper {
+    position: relative; /* Make the container relative for absolute positioning */
+    width: 100%;
+    max-width: 800px; /* Maximum width of the video */
+    margin: 0 auto; /* Center align the video */
+}
+
+.video-element {
+    width: 100%; /* Make the video full width within .video-wrapper */
+    max-width: 100%; /* Prevent video from being too large */
+    height: auto; /* Maintain aspect ratio of the video */
+    border-radius: 10px; /* Rounded corners for video */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow effect for video */
+}
+
+.next-button {
+    bottom: 20px; /* Distance from the bottom */
+    right: 6%; /* Adjust as needed for spacing */
+    padding: 12px 24px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #333333, #555555);
+    color: #fff;
+    border: 2px solid #e60b0b;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.next-button:hover {
+    background: linear-gradient(135deg, #555555, #333333);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .next-button {
+        font-size: 14px; /* Adjusted font size for smaller screens */
+        padding: 10px 20px; /* Adjusted padding for smaller screens */
+        right: 4%; /* Adjust right position for smaller screens */
+    }
+}
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    border: 2px solid rgba(224, 9, 9, 0.7);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 200px; /* กำหนดความสูงของรูปภาพ */
+    object-fit: cover; /* ปรับขนาดรูปภาพให้พอดีกับพื้นที่ */
+    border-radius: 10px 10px 0 0;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 16px;
+    color: #666;
+}
+
+.card-content .btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.card-content .btn:hover {
+    background: #555;
+}
+footer {
+    background-size: 400% 400%;
+    animation: gradientAnimationFooter 15s ease infinite;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+@media (max-width: 1024px) {
+    .text h1 {
+        font-size: 40px; /* Adjusted font size for smaller screens */
+    }
+
+    .text p {
+        font-size: 16px; /* Adjusted font size for smaller screens */
+    }
+
+    .logo {
+        font-size: 28px; /* Adjusted font size for smaller screens */
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Column direction for smaller screens */
+        align-items: center; /* Center align items */
+        padding: 0; /* Removed padding */
+    }
+
+    .navbar ul li {
+        margin-bottom: 10px; /* Added margin bottom for spacing */
+    }
+
+    header {
+        height: 240px; /* Adjusted height for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .text h1 {
+        font-size: 32px; /* Adjusted font size for smaller screens */
+    }
+
+    .text p {
+        font-size: 14px; /* Adjusted font size for smaller screens */
+    }
+
+    .btn2 {
+        font-size: 14px; /* Adjusted font size for smaller screens */
+        padding: 10px 20px; /* Adjusted padding for smaller screens */
+    }
+
+    .logo {
+        font-size: 24px; /* Adjusted font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .text h1 {
+        font-size: 24px; /* Adjusted font size for smaller screens */
+    }
+
+    .text p {
+        font-size: 12px; /* Adjusted font size for smaller screens */
+        padding: 10px; /* Added padding for spacing */
+    }
+
+    .btn2 {
+        font-size: 12px; /* Adjusted font size for smaller screens */
+        padding: 8px 16px; /* Adjusted padding for smaller screens */
+    }
+
+    .logo {
+        font-size: 20px; /* Adjusted font size for smaller screens */
+    }
+
+    .navbar ul li {
+        margin-bottom: 8px; /* Adjusted margin bottom for smaller screens */
+    }
+
+    .image-gallery {
+        padding: 20px 4%; /* Adjusted padding for smaller screens */
+    }
+}

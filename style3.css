@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Tungsten-Bold, sans-serif;
+}
+
+body {
+    background-image: url('https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/122e6caea8b2a2dbb6d6e71eea4e24effab342da-5120x574.png?auto=format&fit=fill&q=80&w=1470');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Tungsten-Bold', sans-serif;
+}
+
+header {
+    background-image: url('https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/122e6caea8b2a2dbb6d6e71eea4e24effab342da-5120x574.png?auto=format&fit=fill&q=80&w=1470');
+    animation: gradientAnimation 15s ease infinite;
+    text-align: center; /* Center align content within header */
+    color: #ffffff; /* Default text color */
+    padding: 20px 0; /* Padding top and bottom */
+}
+
+nav {
+    display: flex;
+    padding: 20px 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    color: #ffffff;
+    font-size: 36px; /* Adjusted font size for smaller screens */
+    font-weight: 600;
+    font-family: Tungsten-Bold, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.logo span {
+    color: #fa0303;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end; /* Align navbar to the right */
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 10px; /* Adjust spacing between navbar items */
+}
+
+.navbar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #fcfcfc;
+}
+
+.header-image {
+    text-align: center; /* Center align content within header */
+    margin-top: 20px; /* Optional margin for spacing */
+}
+
+.header-image img {
+    width: 100%; /* Make the image width 100% of its container */
+    max-width: 1000px; /* Set a maximum width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for the image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    display: block; /* Ensure image behaves as a block element */
+    margin: 0 auto; /* Center align the image */
+}
+.header-image img,
+.text {
+    width: 90%; /* กำหนดความกว้างของรูปและข้อความให้เท่ากัน */
+    max-width: 1000px; /* กำหนดความกว้างสูงสุดของข้อความและภาพ */
+    margin: 0 auto; /* จัดข้อความและรูปภาพไว้ตรงกลาง */
+    display: block; /* ทำให้รูปและข้อความเป็นบล็อก Element */
+    text-align: center; /* จัดข้อความและรูปภาพให้อยู่กลาง */
+    padding: 20px; /* เพิ่ม padding เพื่อปรับระยะห่างของข้อความ */
+}
+
+.header-image img {
+    border-radius: 10px; /* เพิ่มการโค้งมุมให้กับรูปภาพ */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* เพิ่มเงาให้กับรูปภาพ */
+}
+
+.text h1 {
+    font-size: 36px; /* ปรับขนาดตัวอักษรในหัวข้อ */
+}
+
+.text p {
+    font-size: 16px; /* ปรับขนาดตัวอักษรในข้อความ */
+    line-height: 1.6; /* ปรับระยะห่างระหว่างบรรทัด */
+    margin-top: 20px; /* ปรับระยะห่างด้านบนของข้อความ */
+}
+/* เพิ่ม transition เพื่อทำให้เกิดเอฟเฟกต์เมื่อเมาส์ชี้ */
+.text h1,
+.text p,
+.header-image img {
+    transition: transform 0.3s ease;
+}
+
+/* ให้ข้อความหรือภาพขยับเล็กน้อยเมื่อเมาส์ชี้ */
+.text h1:hover,
+.text p:hover,
+.header-image img:hover {
+    transform: translateY(-5px); /* ขยับขึ้นเล็กน้อยเมื่อเมาส์ชี้ */
+}
+
+
+
+.btn2 {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #333333, #555555);
+    color: #fff;
+    border: 2px solid #e60b0b;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn2:hover {
+    background: linear-gradient(135deg, #555555, #333333);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+
+.text {
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+    height: auto;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.text p {
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: 80%;
+    padding: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+}
+@media (max-width: 1024px) {
+    .text h1 {
+        font-size: 40px; /* Adjusted font size for smaller screens */
+    }
+
+    .text p {
+        font-size: 16px; /* Adjusted font size for smaller screens */
+    }
+
+    .logo {
+        font-size: 28px; /* Adjusted font size for smaller screens */
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Column direction for smaller screens */
+        align-items: center; /* Center align items */
+        padding: 0; /* Removed padding */
+    }
+
+    .navbar ul li {
+        margin-bottom: 10px; /* Added margin bottom for spacing */
+    }
+
+    header {
+        height: 240px; /* Adjusted height for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .text h1 {
+        font-size: 32px; /* Adjusted font size for smaller screens */
+    }
+
+    .text p {
+        font-size: 14px; /* Adjusted font size for smaller screens */
+    }
+
+    .btn2 {
+        font-size: 14px; /* Adjusted font size for smaller screens */
+        padding: 10px 20px; /* Adjusted padding for smaller screens */
+    }
+
+    .logo {
+        font-size: 24px; /* Adjusted font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .text h1 {
+        font-size: 24px; /* Adjusted font size for smaller screens */
+    }
+
+    .text p {
+        font-size: 12px; /* Adjusted font size for smaller screens */
+        padding: 10px; /* Added padding for spacing */
+    }
+
+    .btn2 {
+        font-size: 12px; /* Adjusted font size for smaller screens */
+        padding: 8px 16px; /* Adjusted padding for smaller screens */
+    }
+
+    .logo {
+        font-size: 20px; /* Adjusted font size for smaller screens */
+    }
+
+    .navbar ul li {
+        margin-bottom: 8px; /* Adjusted margin bottom for smaller screens */
+    }
+
+    .image-gallery {
+        padding: 20px 4%; /* Adjusted padding for smaller screens */
+    }
+}
+
